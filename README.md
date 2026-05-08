@@ -6,6 +6,8 @@ PlaceTrack is a backend-based Student Placement Tracking System developed using 
 
 This project follows layered backend architecture using Controllers, Services, Repositories, DTOs, and Entity Models.
 
+---
+
 # Features
 
 ## User Management
@@ -44,6 +46,8 @@ Single API to fetch:
 * Job applications
 * Notes
 
+---
+
 # Tech Stack
 
 | Technology      | Purpose                   |
@@ -57,6 +61,8 @@ Single API to fetch:
 | Postman         | API testing               |
 | Git & GitHub    | Version control           |
 
+---
+
 # Architecture
 
 ```text
@@ -69,7 +75,9 @@ Service Layer
 Repository Layer
        ↓
 MySQL Database
+```
 
+---
 
 # Project Structure
 
@@ -82,6 +90,9 @@ src/main/java/com/placetrack/placetrack
 ├── model
 ├── dto
 └── PlacetrackApplication.java
+```
+
+---
 
 # Database Tables
 
@@ -101,11 +112,15 @@ Stores applied companies and statuses.
 
 Stores personal preparation/interview notes.
 
+---
+
 # Entity Relationships
 
 * One User → One Student Profile
 * One User → Many Job Applications
 * One User → Many Notes
+
+---
 
 # API Endpoints
 
@@ -119,6 +134,7 @@ Stores personal preparation/interview notes.
 | PUT    | `/api/users/{id}` | Update user    |
 | DELETE | `/api/users/{id}` | Delete user    |
 
+---
 
 ## Student Profile APIs
 
@@ -130,6 +146,7 @@ Stores personal preparation/interview notes.
 | PUT    | `/api/profiles/{id}` | Update profile    |
 | DELETE | `/api/profiles/{id}` | Delete profile    |
 
+---
 
 ## Job Application APIs
 
@@ -143,6 +160,8 @@ Stores personal preparation/interview notes.
 | PUT    | `/api/applications/{id}`             | Update application       |
 | DELETE | `/api/applications/{id}`             | Delete application       |
 
+---
+
 ## Notes APIs
 
 | Method | Endpoint                   | Description       |
@@ -154,6 +173,7 @@ Stores personal preparation/interview notes.
 | PUT    | `/api/notes/{id}`          | Update note       |
 | DELETE | `/api/notes/{id}`          | Delete note       |
 
+---
 
 ## Dashboard API
 
@@ -161,6 +181,7 @@ Stores personal preparation/interview notes.
 | ------ | -------------------------- | --------------------------- |
 | GET    | `/api/dashboard/user/{id}` | Get complete dashboard data |
 
+---
 
 # Sample JSON Request
 
@@ -172,7 +193,9 @@ Stores personal preparation/interview notes.
   "email": "deepika@gmail.com",
   "password": "deepika123"
 }
+```
 
+---
 
 ## Create Student Profile
 
@@ -188,6 +211,9 @@ Stores personal preparation/interview notes.
   "branch": "CSE",
   "placementStatus": "PLACED"
 }
+```
+
+---
 
 ## Create Job Application
 
@@ -201,6 +227,9 @@ Stores personal preparation/interview notes.
   "appliedDate": "2026-05-08",
   "status": "APPLIED"
 }
+```
+
+---
 
 ## Create Note
 
@@ -211,6 +240,9 @@ Stores personal preparation/interview notes.
     "id": 1
   }
 }
+```
+
+---
 
 # Sample Dashboard Response
 
@@ -238,6 +270,9 @@ Stores personal preparation/interview notes.
     }
   ]
 }
+```
+
+---
 
 # How to Run the Project
 
@@ -245,10 +280,13 @@ Stores personal preparation/interview notes.
 
 ```bash
 git clone https://github.com/DeepikaPeddi/placetrack.git
+```
 
 ## 2. Open in IntelliJ IDEA
 
 Open the project folder.
+
+---
 
 ## 3. Configure MySQL
 
@@ -264,6 +302,9 @@ Update `application.properties`:
 spring.datasource.url=jdbc:mysql://localhost:3306/placetrack_db
 spring.datasource.username=root
 spring.datasource.password=YOUR_PASSWORD
+```
+
+---
 
 ## 4. Run Spring Boot Application
 
@@ -277,11 +318,15 @@ Server starts at:
 
 ```text
 http://localhost:8080
-
 ```
+
+---
+
 ## 5. Test APIs
 
 Use Postman to test REST APIs.
+
+---
 
 # Future Improvements
 
@@ -292,6 +337,8 @@ Use Postman to test REST APIs.
 * Email notifications
 * Swagger API documentation
 * Deployment on Render/Railway
+
+---
 
 # Learning Outcomes
 
@@ -305,3 +352,12 @@ This project helped in understanding:
 * MySQL integration
 * Git & GitHub workflow
 * API testing using Postman
+
+---
+
+# Author
+
+Deepika Peddi
+
+GitHub:
+[https://github.com/DeepikaPeddi](https://github.com/DeepikaPeddi)
