@@ -6,8 +6,6 @@ PlaceTrack is a backend-based Student Placement Tracking System developed using 
 
 This project follows layered backend architecture using Controllers, Services, Repositories, DTOs, and Entity Models.
 
----
-
 # Features
 
 ## User Management
