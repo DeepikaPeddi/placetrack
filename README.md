@@ -278,6 +278,7 @@ Server starts at:
 ```text
 http://localhost:8080
 
+```
 ## 5. Test APIs
 
 Use Postman to test REST APIs.
